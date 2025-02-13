@@ -3,7 +3,7 @@ import "./home.css";
 
 const Home = (props) => {
   return (
-    <section id="home" className="home" >
+    <section id="home" className="home" data-aos={props['data-aos']} >
       <div className="overlay"></div>
       <div className="home-content">
         {/* Left Side: Travel Details */}

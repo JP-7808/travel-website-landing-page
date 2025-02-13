@@ -4,7 +4,7 @@ import './contact.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import contactTravel from '../../photos/contactTravel.jpg'
 
-const Contact = () => {
+const Contact = (props) => {
     // State to manage form data and submission status
     const [formData, setFormData] = useState({
         name: '',
@@ -24,7 +24,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact-section">
+        <section className="contact-section" data-aos={props['data-aos']}>
             <div className="contact-container">
                 {/* Image section */}
                 <div className="contact-image">
