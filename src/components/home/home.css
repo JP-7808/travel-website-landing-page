@@ -1,0 +1,136 @@
+/* General styles for the home section */
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../photos/homeBackground.jpg') no-repeat center center/cover;
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Overlay to darken the background */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  /* Main content container */
+  .home-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    z-index: 2;
+  }
+  
+  /* Travel details on the left */
+  .travel-details {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .travel-details h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .travel-details p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Authentication forms on the right */
+  .auth-forms {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .form-container {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 4px 4px 4px 2px rgb(174, 223, 228);
+  }
+  
+  .form-container button {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background: #0056b3;
+  }
+  
+  .form-container p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .form-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .form-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .home-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .travel-details {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .auth-forms {
+      width: 100%;
+    }
+  }
+  
